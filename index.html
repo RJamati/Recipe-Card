@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Card</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <div class="background-image">
+      <div class="container">
+
+        <!-- Print Button -->
+        <div class="print">
+          <a href="#" onclick="window.print()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-printer-fill" viewBox="0 0 16 16">
+              <path
+                d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+              <path
+                d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+            </svg> Print this page!
+          </a>
+        </div>
+
+        <!-- Card 1 - Recipe Introduction -->
+        <div class="card-intro">
+          <figure class="card-intro__image">
+            <img src="https://assets.codepen.io/652/shania-pinnata-7E-vKgzahd8-unsplash.jpg"
+              alt="spaghetti with pesto sauce and cherry tomatoes.">
+            <!-- full size image URL: https://images.unsplash.com/photo-1593253787226-567eda4ad32d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2434&q=80 -->
+            <figcaption class="card-intro__caption">Photo by Shania Pinnata</figcaption>
+          </figure>
+
+          <h1 class="card-intro__title">Pasta with Pesto and Tomatoes</h1>
+
+          <div class="card-intro__description">
+            <p>This quick and delicious pasta dish is the perfect way to use up a summer bounty of basil and tomatoes!
+            </p>
+            <p>Don't have a green thumb? Never fear! You can knock out this classic pasta dish in no time with a jar of
+              prepared pesto sauce. </p>
+          </div>
+
+          <div class="card-intro__recipe-details">
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-people-fill" viewBox="0 0 16 16">
+                  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                  <path fill-rule="evenodd"
+                    d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                  <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                </svg> Servings: </br>4
+              </li>
+
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-clock-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                </svg> Prep Time: </br>5 minutes
+              </li>
+
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z" />
+                </svg> Cook Time: </br> 25 minutes
+              </li>
+
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z" />
+                </svg> Total Time: </br>30 minutes
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2 - Ingredients -->
+        <div class="card-ingredients">
+          <div class="col">
+            <h2 class="card-ingredients__title">Ingredients</h2>
+
+            <ul class="card-ingredients__list">
+              <li>8 oz. spaghetti or linguine pasta</li>
+              <li>2 cups fresh basil leaves, plus 4-8 reserved leaves for garnish</li>
+              <li>2 cloves garlic</li>
+              <li>2 tbsp. pine nuts or blanched almonds</li>
+              <li>1/2 cup olive oil</li>
+              <li>1/2 cup grated Parmesan cheese, plus 2 tbsp. for garnish.</li>
+              <li>1/8 tsp salt</li>
+              <li>1 pint cherry tomatoes</li>
+              <li>1 tsp olive oil</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <figure class="card-ingredients__image">
+              <img src="https://assets.codepen.io/652/tamanna-rumee-nswz6tIpgZk-unsplash.jpg"
+                alt="tomato halves surrounded by basil leaves and peppercorns.">
+              <!-- full size image URL: https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80-->
+              <figcaption class="card-ingredients__caption">Photo by Tamanna Rumee</figcaption>
+            </figure>
+
+            <div class="card-ingredients__variation-block">
+              <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                </svg>Variation:</h3>
+              <p class="card-ingredients__variation">Got no time, or no fresh basil? Use a 6 ounce jar of prepared pesto instead.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 - Process -->
+        <div class="card-process">
+          <h2 class="card-process__title">Process</h2>
+
+          <ol class="card-process__instructions">
+            <li>Bring 4 quarts of water to a rolling boil in a large pot. Salt the water generously and add the pasta.</li>
+            <li>While the pasta cooks, make the pesto.
+              <ul>
+                <li>Remove stems from basil leaves.</li>
+                <li>Put the basil, garlic, and pine nuts or almonds into the bowl of a food processor and pulse it a few
+                  times to chop them up.</li>
+                <li>Then, turn the food processor on and <strong>slowly</strong> pour the olive oil through the feeder
+                  tube to blend with the chopped herbs and nuts. </li>
+                <li>Process until all ingredients are fully blended, stopping the food processor to scrape down the
+                  sides occasionally to get it all mixed. </li>
+                <li>Turn off the food processor, and add the salt and Parmesean, then pulse a few times to blend.</li>
+              </ul>
+            </li>
+            <li>Heat a large skillet over medium heat. </li>
+            <li>Add the 1/2 tsp. olive oil to the heated skillet.</li>
+            <li>Add the cherry tomatoes to the skillet and let them blister, stirring occasionally and gently so they
+              don't burst. </li>
+            <li>Remove tomatoes from the pan and set aside. </li>
+            <li>Drain the pasta, reserving 1/4 cup of the cooking water.</li>
+            <li>Return the pasta to the pot</li>
+            <li>Add the reserved cooking water and pesto to the pasta and stir to mix</li>
+            <li>Plate the pasta and add 6-8 tomatoes to each plate</li>
+            <li>Garnish with reserved basil leaves and Parmesean and serve. <br>
+              <p class="card-process__instructions__sticker">Buon Appetito!</p>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </body>
+
+</html>

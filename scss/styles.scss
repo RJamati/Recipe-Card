@@ -1,0 +1,429 @@
+// Import Fonts
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+// Import Normalise CSS
+@import "normalise.scss";
+
+// Variables
+$primary-font: "Crimson Text", serif;
+$secondary-font: "Montserrat", sans-serif;
+$color-red: #db1c08;
+$color-green: #73ad21;
+$color-white: #ffffff;
+$color-grey: #f4f6f8;
+$color-black: #000000;
+
+// Set border box sizing
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: $primary-font;
+  color: $color-grey;
+  background-color: $color-grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font;
+}
+
+.background-image {
+  background-image: url("https://images.unsplash.com/photo-1606923829579-0cb981a83e2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.print {
+  svg {
+    margin-right: 10px;
+  }
+
+  a {
+    display: flex;
+
+    margin-bottom: 20px;
+    padding: 10px;
+
+    text-decoration: none;
+
+    color: $color-grey;
+    border-radius: 5px;
+    background-color: $color-red;
+
+    justify-content: right;
+    align-items: center;
+  }
+}
+
+// Card 1 - Recipe Introduction
+.card-intro {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 25px;
+  background-color: $color-green;
+
+  &__title {
+    font-size: 28px;
+
+    margin-bottom: 0;
+    padding: 0 20px;
+
+    text-align: center;
+  }
+
+  &__image {
+    position: relative;
+
+    margin: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    img {
+      width: 100%;
+      min-height: 350px;
+      max-height: 100px;
+
+      border-radius: 25px 25px 0 0;
+
+      object-fit: cover;
+      object-position: 20% 30%;
+
+      @media (min-width: 420px) {
+        min-height: 400px;
+      }
+
+      @media (min-width: 550px) {
+        min-height: 450px;
+      }
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    padding: 5px;
+
+    color: $color-grey;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  &__description {
+    font-size: 18px;
+
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0 20px;
+
+    text-align: justify;
+  }
+
+  &__recipe-details {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    ul {
+      font-size: 14px;
+
+      display: flex;
+
+      padding: 0 20px;
+
+      list-style: none;
+
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media (min-width: 600px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+
+      li {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 45%;
+        padding: 3px;
+
+        text-align: center;
+
+        color: $color-grey;
+        border-radius: 5px;
+        background-color: $color-red;
+
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-bottom: 20px;
+        }
+
+        @media (min-width: 600px) {
+          flex-direction: row;
+
+          max-width: 125px;
+          margin-bottom: 0 !important;
+
+          &:not(:last-of-type) {
+            margin-right: 15px;
+          }
+        }
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        margin-left: 5px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+//Card 2 - Ingredients
+.card-ingredients {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+  padding: 20px;
+
+  border-radius: 25px;
+  background: $color-green;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 7px;
+
+    margin-left: 20px;
+  }
+
+  &__list {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__image {
+    position: relative;
+
+    margin: 20px;
+
+    @media (min-width: 600px) {
+      margin: 40px;
+    }
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    padding: 5px;
+
+    color: $color-grey;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, .8);
+
+    @media(min-width: 600px) {
+      bottom: -10px;
+      left: 31px;
+    }
+  }
+
+  &__variation-block {
+    margin: 20px;
+    padding: 30px 20px;
+
+    color: $color-grey;
+    border-radius: 10px;
+    background: $color-red;
+
+    @media(min-width: 600px) {
+      margin: 40px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 24px;
+
+      display: flex;
+
+      margin-top: 0;
+      margin-bottom: 10px;
+
+      align-items: flex-end;
+    }
+
+    svg {
+      width: 25px;
+      height: 30px;
+      margin-right: 3px;
+    }
+  }
+}
+
+//Card 3 - Process
+.card-process {
+  position: relative;
+
+  margin-top: 20px;
+  padding: 20px;
+
+  border-radius: 25px;
+  background: $color-green;
+
+  &__title {
+    margin-left: 20px;
+
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  &__instructions {
+    line-height: 25px;
+
+    margin-right: 20px;
+
+    text-align: justify;
+
+    ol {
+      font-size: 20px;
+
+      margin-bottom: 20px;
+    }
+
+    &__sticker {
+      font-size: 25px;
+      font-weight: bold;
+
+      display: inline-block;
+      float: right;
+
+      margin-top: 20px;
+      padding: 20px;
+
+      text-align: right;
+
+      color: $color-white;
+      border-radius: 15px;
+      background-color: $color-red;
+
+      @media(min-width: 600px) {
+        position: absolute;
+        right: -40px;
+        bottom: -45px;
+
+        transform: rotate(-20deg);
+      }
+    }
+  }
+}
+
+// Print Styles
+@media print {
+  body {
+    color: $color-black !important;
+    background-color: $color-white !important;
+  }
+
+  img,
+  figcaption,
+  svg,
+  .print {
+    display: none;
+  }
+
+  .card-intro {
+    margin: 0 !important;
+
+    &__recipe-details {
+      width: 100%;
+
+      ul {
+        flex-wrap: wrap !important;
+
+        li {
+          width: auto !important;
+          margin: 0 !important;
+          padding-right: 20px;
+
+          color: $color-black !important;
+        }
+      }
+    }
+  }
+
+  .card-ingredients {
+    margin: 0 !important;
+
+    &__title {
+      margin: 0 !important;
+    }
+
+    &__variation-block {
+      margin: 0 !important;
+      padding: 0 !important;
+
+      color: $color-black !important;
+    }
+  }
+
+  .card-process {
+    margin: 0 !important;
+
+    &__title {
+      margin: 0 !important;
+    }
+
+    &__instructions__sticker {
+      color: $color-black !important;
+    }
+  }
+}
