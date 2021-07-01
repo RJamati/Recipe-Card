@@ -1,13 +1,13 @@
 // Import Fonts
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 
 // Import Normalise CSS
 @import "normalise.scss";
 
 // Variables
 $primary-font: "Crimson Text", serif;
-$secondary-font: "Montserrat", sans-serif;
+$secondary-font: "Playfair Display", serif;
 $color-red: #db1c08;
 $color-green: #73ad21;
 $color-white: #ffffff;
@@ -340,6 +340,7 @@ h6 {
     }
 
     &__sticker {
+      font-family: $secondary-font;
       font-size: 25px;
       font-weight: bold;
 
