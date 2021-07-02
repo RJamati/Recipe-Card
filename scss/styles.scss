@@ -90,6 +90,9 @@ h6 {
   border-radius: 25px;
   background-color: $color-green;
 
+  -webkit-box-shadow: -2px 5px 11px -1px #000000;
+  box-shadow: -2px 5px 11px -1px #000000;
+
   &__title {
     font-size: 28px;
 
@@ -228,6 +231,9 @@ h6 {
   border-radius: 25px;
   background: $color-green;
 
+  -webkit-box-shadow: -2px 5px 11px -1px #000000;
+  box-shadow: -2px 5px 11px -1px #000000;
+
   @media (min-width: 600px) {
     flex-direction: row;
   }
@@ -319,6 +325,9 @@ h6 {
 
   border-radius: 25px;
   background: $color-green;
+
+  -webkit-box-shadow: -2px 5px 11px -1px #000000;
+  box-shadow: -2px 5px 11px -1px #000000;
 
   &__title {
     margin-left: 20px;
