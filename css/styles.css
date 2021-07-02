@@ -335,24 +335,25 @@ h6 {
   flex-direction: column;
   width: 100%;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 0 20px;
   justify-content: center;
   align-items: center; }
 
-.print svg {
-  margin-right: 10px; }
-
-.print a {
-  display: flex;
-  margin-bottom: 20px;
-  padding: 10px;
-  text-decoration: none;
-  color: #f4f6f8;
-  border-radius: 5px;
-  background-color: #db1c08;
-  justify-content: right;
-  align-items: center; }
+.print {
+  margin-top: 20px; }
+  .print svg {
+    margin-right: 10px; }
+  .print a {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: #f4f6f8;
+    border-radius: 5px;
+    background-color: #db1c08;
+    justify-content: right;
+    align-items: center; }
 
 .card-intro {
   display: flex;
